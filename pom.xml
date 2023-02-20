@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tutorialspoint</groupId>
+    <artifactId>cxf-wsdl-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+      <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
+      <org.apache.cxf.version>3.5.5</org.apache.cxf.version>
+      <cxf-xjc-runtime.version>3.3.2</cxf-xjc-runtime.version>
+      <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
+      <slf4j-api.version>2.0.6</slf4j-api.version>
+   </properties>
+
+    <modules>
+        <module>cxf-wsdl-artifact</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencies>
+       
+    </dependencies>
+
+</project>
