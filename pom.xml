@@ -22,6 +22,7 @@
 
     <modules>
         <module>cxf-wsdl-artifact</module>
+        <module>cxf-wsdl-client</module>
     </modules>
 
     <build>
